@@ -1,5 +1,3 @@
-// Для проверяющиего: я вынес часть кода в отдельный модуль 
-// В рамках таска это не запрещено!
 module.exports = bundleFile
 
 function bundleFile(fromFolder, toFile) {
