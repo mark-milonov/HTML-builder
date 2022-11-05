@@ -5,6 +5,7 @@ async function copyDir(fromPath, toPath) {
   const fsProm = require('fs/promises')
   const path = require('path');
 
+  await fsProm.rm(toPath, {recursive: true, force: true})
   await fsProm.mkdir(toPath, {recursive: true})
 
   fs.readdir(fromPath, {withFileTypes: true}, (err, files) => {
